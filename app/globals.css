@@ -21,13 +21,12 @@
   --secondary: hsl(0 0% 96.1%);
   --secondary-foreground: hsl(0 0% 9%);
   --muted: hsl(0 0% 96.1%);
-  --muted-foreground: hsl(0 0% 45.1%);
+  --muted-foreground: hsl(93, 10%, 59%);
   --accent: hsl(92, 12%, 25%);
   --accent-foreground: hsl(52, 50%, 54%);
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(0 0% 98%);
-  --border: hsl(86, 6%, 55%);
-  --border-dark: hsl(76, 14%, 15%);
+  --border: hsl(76, 14%, 15%);
   --input: hsl(0 0% 89.8%);
   --ring: hsl(0 0% 3.9%);
   --chart-1: hsl(12 76% 61%);

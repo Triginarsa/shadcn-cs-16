@@ -18,7 +18,7 @@ const buttonVariants = cva(
         secondary:
           "bg-primary text-primary-foreground border ring ring-black border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] active:border-t-[#292c21] active:border-l-[#292c21] active:border-r-[#8c9284] active:border-b-[#8c9284] ring-offset-background focus-visible:ring-2 focus-visible:ring-ring",
         ghost:
-          "hover:bg-accent hover:text-accent-foreground active:bg-primary active:border active:border-t-[#292c21] active:border-l-[#292c21] active:border-r-[#8c9284] active:border-b-[#8c9284]",
+          "hover:text-accent-foreground active:bg-primary active:border-2 active:border-t-[#292c21] active:border-l-[#292c21] active:border-r-[#8c9284] active:border-b-[#8c9284] hover:border-t-[#292c21] hover:border hover:border-l-[#292c21] hover:border-r-[#8c9284] hover:border-b-[#8c9284]",
         link: "text-accent-foreground underline-offset-4 hover:underline hover:decoration-dotted",
       },
       size: {

@@ -1,3 +1,4 @@
+import { SeparatorDemo } from "@/components/separator-demo";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -36,6 +37,8 @@ export default function Home() {
             </Button>
           </div>
         </div>
+
+        <SeparatorDemo />
       </main>
     </div>
   );
