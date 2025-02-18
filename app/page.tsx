@@ -2,6 +2,7 @@ import { ChartDemo } from "@/components/chart-demo";
 import { CheckboxDemo } from "@/components/checkbox-demo";
 import { DialogDemo } from "@/components/dialog-demo";
 import { InputDemo } from "@/components/input-demo";
+import { ProgressDemo } from "@/components/progress-demo";
 import { RadioGroupDemo } from "@/components/radio-group-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { SliderDemo } from "@/components/slider-demo";
@@ -50,6 +51,7 @@ export default function Home() {
           <SliderDemo />
           <DialogDemo />
           <TooltipDemo />
+          <ProgressDemo />
           <ChartDemo />
         </div>
       </main>
