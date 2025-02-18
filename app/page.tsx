@@ -1,3 +1,4 @@
+import { CheckboxDemo } from "@/components/checkbox-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { Button } from "@/components/ui/button";
 
@@ -36,9 +37,9 @@ export default function Home() {
               Secondary Disabled
             </Button>
           </div>
+          <SeparatorDemo />
+          <CheckboxDemo />
         </div>
-
-        <SeparatorDemo />
       </main>
     </div>
   );
