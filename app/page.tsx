@@ -1,4 +1,5 @@
 import { CheckboxDemo } from "@/components/checkbox-demo";
+import { InputDemo } from "@/components/input-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { Button } from "@/components/ui/button";
 
@@ -39,6 +40,7 @@ export default function Home() {
           </div>
           <SeparatorDemo />
           <CheckboxDemo />
+          <InputDemo />
         </div>
       </main>
     </div>
