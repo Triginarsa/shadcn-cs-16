@@ -5,6 +5,7 @@ import { InputDemo } from "@/components/input-demo";
 import { RadioGroupDemo } from "@/components/radio-group-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { SliderDemo } from "@/components/slider-demo";
+import { TooltipDemo } from "@/components/tooltips-demo";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -48,6 +49,7 @@ export default function Home() {
           <RadioGroupDemo />
           <SliderDemo />
           <DialogDemo />
+          <TooltipDemo />
           <ChartDemo />
         </div>
       </main>
