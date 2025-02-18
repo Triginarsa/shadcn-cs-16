@@ -1,5 +1,7 @@
+import { ChartDemo } from "@/components/chart-demo";
 import { CheckboxDemo } from "@/components/checkbox-demo";
 import { InputDemo } from "@/components/input-demo";
+import { RadioGroupDemo } from "@/components/radio-group-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { Button } from "@/components/ui/button";
 
@@ -41,6 +43,8 @@ export default function Home() {
           <SeparatorDemo />
           <CheckboxDemo />
           <InputDemo />
+          <RadioGroupDemo />
+          <ChartDemo />
         </div>
       </main>
     </div>
