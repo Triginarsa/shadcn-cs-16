@@ -2,7 +2,7 @@ import { Separator } from "@/components/ui/separator";
 
 export function SeparatorDemo() {
   return (
-    <div>
+    <>
       <div className="space-y-1">
         <h4 className="text-sm font-medium leading-none">Radix Primitives</h4>
         <p className="text-sm text-muted-foreground">
@@ -17,6 +17,6 @@ export function SeparatorDemo() {
         <Separator orientation="vertical" />
         <div>Source</div>
       </div>
-    </div>
+    </>
   );
 }
