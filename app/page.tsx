@@ -1,3 +1,4 @@
+import { AccordionDemo } from "@/components/accordion-demo";
 import ButtonDemo from "@/components/button-demo";
 import { ChartDemo } from "@/components/chart-demo";
 import { CheckboxDemo } from "@/components/checkbox-demo";
@@ -71,6 +72,10 @@ export default function Home() {
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
               <h2 className="text-2xl mb-2">Tabs</h2>
               <TabsDemo />
+            </div>
+            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
+              <h2 className="text-2xl mb-2">Accordion</h2>
+              <AccordionDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] md:col-span-2 lg:col-span-3">
               <h2 className="text-2xl mb-2">Charts</h2>
