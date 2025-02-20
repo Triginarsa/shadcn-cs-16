@@ -1,5 +1,6 @@
 import { AccordionDemo } from "@/components/accordion-demo";
 import { AlertDialogDemo } from "@/components/alert-dialog-demo";
+import { BadgeDemo } from "@/components/badge-demo";
 import ButtonDemo from "@/components/button-demo";
 import { ChartDemo } from "@/components/chart-demo";
 import { CheckboxDemo } from "@/components/checkbox-demo";
@@ -7,10 +8,14 @@ import { DialogDemo } from "@/components/dialog-demo";
 import { InputDemo } from "@/components/input-demo";
 import { ProgressDemo } from "@/components/progress-demo";
 import { RadioGroupDemo } from "@/components/radio-group-demo";
+import { ScrollAreaDemo } from "@/components/scroll-area-demo";
+import { ScrollAreaHorizontalDemo } from "@/components/scroll-area-horizontal-demo";
+import { SelectDemo } from "@/components/select-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { SliderDemo } from "@/components/slider-demo";
 import { TabsDemo } from "@/components/tabs-demo";
 import { TooltipDemo } from "@/components/tooltips-demo";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
@@ -75,20 +80,28 @@ export default function Home() {
               <TabsDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">
+              <h2 className="flex text-2xl mb-2 items-center">
                 Accordion
-                <span className="ml-2 bg-accent-foreground text-primary p-[1px] text-xs">
-                  {" "}
-                  Tailwind v4
-                </span>
+                <Badge className="ml-2">Tailwind v4</Badge>
               </h2>
-
               <AccordionDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
               <h2 className="text-2xl mb-2">Alert Dialog</h2>
-
               <AlertDialogDemo />
+            </div>
+            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
+              <h2 className="text-2xl mb-2">Badge</h2>
+              <BadgeDemo />
+            </div>
+            <div className="flex flex-col p-4 gap-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
+              <h2 className="text-2xl mb-2">Scroll Area</h2>
+              <ScrollAreaDemo />
+              <ScrollAreaHorizontalDemo />
+            </div>
+            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
+              <h2 className="text-2xl mb-2">Select</h2>
+              <SelectDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] md:col-span-2 lg:col-span-3">
               <h2 className="text-2xl mb-2">Charts</h2>
