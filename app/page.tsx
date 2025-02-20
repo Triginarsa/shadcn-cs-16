@@ -8,6 +8,8 @@ import { DialogDemo } from "@/components/dialog-demo";
 import { InputDemo } from "@/components/input-demo";
 import { ProgressDemo } from "@/components/progress-demo";
 import { RadioGroupDemo } from "@/components/radio-group-demo";
+import { ScrollAreaDemo } from "@/components/scroll-area-demo";
+import { ScrollAreaHorizontalDemo } from "@/components/scroll-area-horizontal-demo";
 import { SeparatorDemo } from "@/components/separator-demo";
 import { SliderDemo } from "@/components/slider-demo";
 import { TabsDemo } from "@/components/tabs-demo";
@@ -81,7 +83,6 @@ export default function Home() {
                 Accordion
                 <Badge className="ml-2">Tailwind v4</Badge>
               </h2>
-
               <AccordionDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
@@ -91,6 +92,11 @@ export default function Home() {
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
               <h2 className="text-2xl mb-2">Badge</h2>
               <BadgeDemo />
+            </div>
+            <div className="flex flex-col p-4 gap-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
+              <h2 className="text-2xl mb-2">Scroll Area</h2>
+              <ScrollAreaDemo />
+              <ScrollAreaHorizontalDemo />
             </div>
             <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] md:col-span-2 lg:col-span-3">
               <h2 className="text-2xl mb-2">Charts</h2>
