@@ -192,7 +192,7 @@
 
 @layer base {
   * {
-    @apply border-border outline-none;
+    @apply border-border outline-black;
   }
   body {
     @apply bg-background text-foreground;
