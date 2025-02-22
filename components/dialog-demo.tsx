@@ -29,9 +29,9 @@ export function DialogDemo() {
             <Input
               id="name"
               defaultValue="Adi Triginarsa"
-              className="col-span-3 order-last"
+              className="order-last col-span-3"
             />
-            <Label htmlFor="name" className="text-right order-first">
+            <Label htmlFor="name" className="order-first text-right">
               Name
             </Label>
           </div>
@@ -39,9 +39,9 @@ export function DialogDemo() {
             <Input
               id="username"
               defaultValue="@triginarsa"
-              className="col-span-3 order-last"
+              className="order-last col-span-3"
             />
-            <Label htmlFor="username" className="text-right order-first">
+            <Label htmlFor="username" className="order-first text-right">
               Username
             </Label>
           </div>

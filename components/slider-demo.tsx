@@ -1,5 +1,5 @@
-import { cn } from "@/lib/utils";
 import { Slider } from "@/components/ui/slider";
+import { cn } from "@/lib/utils";
 import { Input } from "./ui/input";
 
 type SliderProps = React.ComponentProps<typeof Slider>;
@@ -7,7 +7,7 @@ type SliderProps = React.ComponentProps<typeof Slider>;
 export function SliderDemo({ className, ...props }: SliderProps) {
   return (
     <div className="w-full">
-      <div className="flex flex-col gap-4 items-start">
+      <div className="flex flex-col items-start gap-4">
         <Slider
           defaultValue={[50]}
           className={cn("w-full", className)}
@@ -25,8 +25,8 @@ export function SliderDemo({ className, ...props }: SliderProps) {
           {...props}
         /> */}
       </div>
-      <p className="text-base mt-6 mb-2">Sliders with Input</p>
-      <div className="flex w-full py-2 gap-4 items-start">
+      <p className="mt-6 mb-2 text-base">Sliders with Input</p>
+      <div className="flex w-full items-start gap-4 py-2">
         <Slider
           defaultValue={[50]}
           className={cn("w-[60%]", className)}

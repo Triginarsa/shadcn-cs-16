@@ -25,10 +25,10 @@ export default function Home() {
       <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
         <main className="flex flex-col items-center gap-8 md:gap-12">
           <div className="w-full max-w-2xl">
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-normal text-center tracking-wide">
+            <h1 className="text-center text-3xl font-normal tracking-wide md:text-4xl lg:text-5xl">
               CS 1.6 Shadcn Theme
             </h1>
-            <p className="text-lg text-muted-foreground text-center">
+            <p className="text-center text-lg text-muted-foreground">
               An open-source UI component library.{" "}
               <Button variant="link" size="url">
                 <Link href="https://github.com/Triginarsa/shadcn-cs-16">
@@ -38,73 +38,73 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-7xl">
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Buttons</h2>
+          <div className="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Buttons</h2>
               <ButtonDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Separator</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Separator</h2>
               <SeparatorDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Checkbox</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Checkbox</h2>
               <CheckboxDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Inputs</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Inputs</h2>
               <InputDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">RadioGroup</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">RadioGroup</h2>
               <RadioGroupDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Sliders</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Sliders</h2>
               <SliderDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Dialog</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Dialog</h2>
               <DialogDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Tooltip</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Tooltip</h2>
               <TooltipDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Progress</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Progress</h2>
               <ProgressDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Tabs</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Tabs</h2>
               <TabsDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="flex text-2xl mb-2 items-center">
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 flex items-center text-2xl">
                 Accordion
                 <Badge className="ml-2">Tailwind v4</Badge>
               </h2>
               <AccordionDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Alert Dialog</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Alert Dialog</h2>
               <AlertDialogDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Badge</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Badge</h2>
               <BadgeDemo />
             </div>
-            <div className="flex flex-col p-4 gap-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Scroll Area</h2>
+            <div className="flex flex-col gap-4 border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Scroll Area</h2>
               <ScrollAreaDemo />
               <ScrollAreaHorizontalDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]">
-              <h2 className="text-2xl mb-2">Select</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+              <h2 className="mb-2 text-2xl">Select</h2>
               <SelectDemo />
             </div>
-            <div className="p-4 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] md:col-span-2 lg:col-span-3">
-              <h2 className="text-2xl mb-2">Charts</h2>
+            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4 md:col-span-2 lg:col-span-3">
+              <h2 className="mb-2 text-2xl">Charts</h2>
               <ChartDemo />
             </div>
           </div>

@@ -1,8 +1,5 @@
 "use client";
 
-import * as React from "react";
-import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
-
 import {
   Card,
   CardContent,
@@ -16,6 +13,8 @@ import {
   ChartTooltip,
   ChartTooltipContent,
 } from "@/components/ui/chart";
+import * as React from "react";
+import { Bar, BarChart, CartesianGrid, XAxis } from "recharts";
 
 export const description = "An interactive bar chart";
 
@@ -136,7 +135,7 @@ export function ChartDemo() {
       desktop: chartData.reduce((acc, curr) => acc + curr.desktop, 0),
       mobile: chartData.reduce((acc, curr) => acc + curr.mobile, 0),
     }),
-    []
+    [],
   );
 
   return (
@@ -155,13 +154,13 @@ export function ChartDemo() {
               <button
                 key={chart}
                 data-active={activeChart === chart}
-                className="relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-l sm:border-t-0 sm:px-8 sm:py-6"
+                className="relative z-30 flex flex-1 flex-col justify-center gap-1 border-t px-6 py-4 text-left even:border-l data-[active=true]:bg-muted/50 sm:border-t-0 sm:border-l sm:px-8 sm:py-6"
                 onClick={() => setActiveChart(chart)}
               >
                 <span className="text-xs text-muted-foreground">
                   {chartConfig[chart].label}
                 </span>
-                <span className="text-lg font-bold leading-none sm:text-3xl">
+                <span className="text-lg leading-none font-bold sm:text-3xl">
                   {total[key as keyof typeof total].toLocaleString()}
                 </span>
               </button>

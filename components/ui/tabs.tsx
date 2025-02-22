@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
-import * as TabsPrimitive from "@radix-ui/react-tabs";
-
 import { cn } from "@/lib/utils";
+import * as TabsPrimitive from "@radix-ui/react-tabs";
+import * as React from "react";
 
 const Tabs = TabsPrimitive.Root;
 
@@ -14,8 +13,8 @@ const TabsList = React.forwardRef<
   <TabsPrimitive.List
     ref={ref}
     className={cn(
-      "inline-flex justify-start w-fit text-primary-foreground gap-[1px] ",
-      className
+      "inline-flex w-fit justify-start gap-[1px] text-primary-foreground ",
+      className,
     )}
     {...props}
   />
@@ -29,8 +28,8 @@ const TabsTrigger = React.forwardRef<
   <TabsPrimitive.Trigger
     ref={ref}
     className={cn(
-      "inline-flex w-fit justify-start border bg-background -mb-[1px] border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] whitespace-nowrap p-1 text-sm font-medium ring-offset-background transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 data-[state=active]:bg-background data-[state=active]:text-accent-foreground data-[state=active]:border-t-[#8c9284] data-[state=active]:border-l-[#8c9284] data-[state=active]:border-r-[#292c21] data-[state=active]:border-b-[#8c9284] data-[state=active]:border-solid data-[state=inactive]:border-b-[#8c9284] data-[state=active]:-mt-[2px] relative after:content-[''] after:absolute after:-bottom-[1px] after:left-0 after:w-[calc(100%+1px)] after:h-[1px] data-[state=active]:after:bg-background  data-[state=inactive]:after:bg-[#8c9284]",
-      className
+      "relative -mb-[1px] inline-flex w-fit justify-start border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] bg-background p-1 text-sm font-medium whitespace-nowrap ring-offset-background transition-all after:absolute after:-bottom-[1px] after:left-0 after:h-[1px] after:w-[calc(100%+1px)] after:content-[''] focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 data-[state=active]:-mt-[2px] data-[state=active]:border-solid data-[state=active]:border-t-[#8c9284] data-[state=active]:border-r-[#292c21] data-[state=active]:border-b-[#8c9284] data-[state=active]:border-l-[#8c9284] data-[state=active]:bg-background data-[state=active]:text-accent-foreground data-[state=active]:after:bg-background data-[state=inactive]:border-b-[#8c9284]  data-[state=inactive]:after:bg-[#8c9284]",
+      className,
     )}
     {...props}
   />
@@ -44,8 +43,8 @@ const TabsContent = React.forwardRef<
   <TabsPrimitive.Content
     ref={ref}
     className={cn(
-      " p-2 bg-background ring-offset-background focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21]",
-      className
+      " border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] bg-background p-2 ring-offset-background focus-visible:ring-1 focus-visible:ring-ring focus-visible:ring-offset-2 focus-visible:outline-none",
+      className,
     )}
     {...props}
   />
