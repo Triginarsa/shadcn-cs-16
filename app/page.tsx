@@ -17,6 +17,7 @@ import { TabsDemo } from "@/components/tabs-demo";
 import { TooltipDemo } from "@/components/tooltips-demo";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
+import { Card } from "@/components/ui/card";
 import Link from "next/link";
 
 export default function Home() {
@@ -39,74 +40,74 @@ export default function Home() {
           </div>
 
           <div className="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Buttons</h2>
               <ButtonDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Separator</h2>
               <SeparatorDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Checkbox</h2>
               <CheckboxDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Inputs</h2>
               <InputDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">RadioGroup</h2>
               <RadioGroupDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Sliders</h2>
               <SliderDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Dialog</h2>
               <DialogDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Tooltip</h2>
               <TooltipDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Progress</h2>
               <ProgressDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Tabs</h2>
               <TabsDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 flex items-center text-2xl">
                 Accordion
                 <Badge className="ml-2">Tailwind v4</Badge>
               </h2>
               <AccordionDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Alert Dialog</h2>
               <AlertDialogDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Badge</h2>
               <BadgeDemo />
-            </div>
-            <div className="flex flex-col gap-4 border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="flex flex-col gap-4 p-4">
               <h2 className="mb-2 text-2xl">Scroll Area</h2>
               <ScrollAreaDemo />
               <ScrollAreaHorizontalDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4">
+            </Card>
+            <Card className="p-4">
               <h2 className="mb-2 text-2xl">Select</h2>
               <SelectDemo />
-            </div>
-            <div className="border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] p-4 md:col-span-2 lg:col-span-3">
+            </Card>
+            <Card className="p-4 md:col-span-2 lg:col-span-3">
               <h2 className="mb-2 text-2xl">Charts</h2>
               <ChartDemo />
-            </div>
+            </Card>
           </div>
         </main>
       </div>
