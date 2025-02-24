@@ -40,11 +40,22 @@
                 }
             }
           },
+          {
+            "name": "font",
+            "type": "registry:file",
+            "files": [
+              {
+                "path": "app/ArialPixel.ttf",
+                "type": "registry:file"
+              }
+            ]
+          },
         {
             "name": "button",
             "type": "registry:ui",
             "dependencies": [
                 "https://shadcn-cs16.triginarsa.com/r/theme-cs16.json",
+                "https://shadcn-cs16.triginarsa.com/r/font.json",
                 "@radix-ui/react-slot"
             ],
             "files": [
