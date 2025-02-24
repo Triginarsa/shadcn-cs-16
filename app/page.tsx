@@ -1,3 +1,5 @@
+"use client";
+
 import { AccordionDemo } from "@/components/accordion-demo";
 import { AlertDialogDemo } from "@/components/alert-dialog-demo";
 import { BadgeDemo } from "@/components/badge-demo";
@@ -18,9 +20,12 @@ import { TooltipDemo } from "@/components/tooltips-demo";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
 import Link from "next/link";
 
 export default function Home() {
+  const { isCopied, copyToClipboard } = useCopyToClipboard();
+
   return (
     <div className="min-h-screen w-full bg-background">
       <div className="container mx-auto px-4 py-8 md:py-12 lg:py-16">
@@ -41,7 +46,20 @@ export default function Home() {
 
           <div className="grid w-full max-w-7xl grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Buttons</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Buttons</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/r/button.json",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <ButtonDemo />
             </Card>
             <Card className="p-4">
