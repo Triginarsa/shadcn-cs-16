@@ -3,6 +3,7 @@
   "name": "button",
   "type": "registry:ui",
   "dependencies": [
+    "https://shadcn-cs16.triginarsa.com/r/theme-cs16.json",
     "@radix-ui/react-slot"
   ],
   "files": [
