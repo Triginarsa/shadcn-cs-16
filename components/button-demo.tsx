@@ -15,7 +15,7 @@ interface ButtonRowProps {
 }
 
 const ButtonRow = ({ variant, label }: ButtonRowProps) => (
-  <div className="flex gap-4 items-center">
+  <div className="flex items-center gap-4">
     <Button variant={variant}>{label}</Button>
     <Button variant={variant} disabled>
       {label} Disabled

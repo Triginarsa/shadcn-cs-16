@@ -1,13 +1,12 @@
 "use client";
 
-import * as React from "react";
+import { cn } from "@/lib/utils";
 import * as CheckboxPrimitive from "@radix-ui/react-checkbox";
 import { cva, type VariantProps } from "class-variance-authority";
-
-import { cn } from "@/lib/utils";
+import * as React from "react";
 
 const checkboxVariants = cva(
-  "peer h-3 w-3 shrink-0 border focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring/50 disabled:cursor-not-allowed disabled:opacity-50",
+  "peer h-3 w-3 shrink-0 border focus-visible:outline-none focus-visible:outline-offset-1 focus-visible:outline-1 focus-visible:outline-dotted focus-visible:outline-black disabled:cursor-not-allowed disabled:opacity-50",
   {
     variants: {
       variant: {
@@ -20,7 +19,7 @@ const checkboxVariants = cva(
     defaultVariants: {
       variant: "default",
     },
-  }
+  },
 );
 
 interface CheckboxProps

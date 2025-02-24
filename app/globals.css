@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme {
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-sans: var(--font-arial-pixel);
+  --font-mono: var(--font-arial-pixel);
 }
 
 :root {
@@ -27,8 +27,6 @@
   --destructive: hsl(0 84.2% 60.2%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: hsl(76, 14%, 15%);
-  --border-light: hsl(86, 6%, 55%);
-  --scrollbar: hsl(97, 14%, 36%);
   --input: hsl(76, 14%, 15%);
   --ring: hsl(0 0% 3.9%);
   --chart-1: hsl(42, 100%, 50%);
@@ -57,7 +55,6 @@
   --destructive: hsl(0 62.8% 30.6%);
   --destructive-foreground: hsl(0 0% 98%);
   --border: hsl(0 0% 14.9%);
-  --border-light: hsl(86, 6%, 55%);
   --input: hsl(0 0% 14.9%);
   --ring: hsl(0 0% 83.1%);
   --chart-1: hsl(220 70% 50%);
@@ -85,8 +82,6 @@
   --color-destructive: var(--destructive);
   --color-destructive-foreground: var(--destructive-foreground);
   --color-border: var(--border);
-  --color-border-light: var(--border-light);
-  --color-scrollbar: var(--scrollbar);
   --color-input: var(--input);
   --color-ring: var(--ring);
   --color-chart-1: var(--chart-1);
@@ -129,7 +124,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-color: var(--scrollbar);
+  background-color: hsl(97, 14%, 36%);
   width: 18px;
   border: 1px solid var(--border);
   border-left: 0;
@@ -139,8 +134,7 @@
   width: 17px;
   background-color: var(--background);
   border: 1px solid;
-  border-color: var(--border-light) var(--border) var(--border)
-    var(--border-light);
+  border-color: hsl(86, 6%, 55%) var(--border) var(--border) hsl(86, 6%, 55%);
 }
 
 ::-webkit-scrollbar-corner {
@@ -167,13 +161,12 @@
 ::-webkit-scrollbar-button:vertical:start,
 ::-webkit-scrollbar-button:vertical:end {
   border: 1px solid;
-  border-color: var(--border-light) var(--border) var(--border)
-    var(--border-light);
+  border-color: hsl(86, 6%, 55%) var(--border) var(--border) hsl(86, 6%, 55%);
 }
 
 ::-webkit-scrollbar-button:vertical:start:active,
 ::-webkit-scrollbar-button:vertical:end:active {
-  border-color: var(--border-dark) var(--border-light) var(--border-light)
+  border-color: var(--border-dark) hsl(86, 6%, 55%) hsl(86, 6%, 55%)
     var(--border);
 }
 

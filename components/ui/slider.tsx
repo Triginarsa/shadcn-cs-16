@@ -1,9 +1,8 @@
 "use client";
 
-import * as React from "react";
-import * as SliderPrimitive from "@radix-ui/react-slider";
-
 import { cn } from "@/lib/utils";
+import * as SliderPrimitive from "@radix-ui/react-slider";
+import * as React from "react";
 
 interface SliderProps
   extends React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> {
@@ -17,19 +16,19 @@ const Slider = React.forwardRef<
 >(({ className, startTitle, endTitle, ...props }, ref) => (
   <SliderPrimitive.Root
     ref={ref}
-    className={cn("w-full h-[24px] touch-none select-none", className)}
+    className={cn("h-[24px] w-full touch-none select-none", className)}
     {...props}
   >
-    <div className="relative flex items-center mt-2 z-10">
-      <SliderPrimitive.Track className="relative h-1 w-full grow overflow-hidden border border-r-[#8c9284] border-b-[#8c9284] border-t-[#292c21] border-l-[#292c21] bg-[#1f1f1f]">
+    <div className="relative z-10 mt-2 flex items-center">
+      <SliderPrimitive.Track className="relative h-1 w-full grow overflow-hidden border border-t-[#292c21] border-r-[#8c9284] border-b-[#8c9284] border-l-[#292c21] bg-[#1f1f1f]">
         <SliderPrimitive.Range className="absolute h-full bg-[#1f1f1f]" />
       </SliderPrimitive.Track>
-      <SliderPrimitive.Thumb className="block h-4 w-2 border border-t-[#8c9284] border-l-[#8c9284] border-r-[#292c21] border-b-[#292c21] bg-background transition-colors focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50" />
+      <SliderPrimitive.Thumb className="block h-4 w-2 border border-t-[#8c9284] border-r-[#292c21] border-b-[#292c21] border-l-[#8c9284] bg-background transition-colors focus-visible:ring-1 focus-visible:ring-ring focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50" />
     </div>
-    <div className="relative w-full mt-1">
+    <div className="relative mt-1 w-full">
       {/* Percentage indicators */}
       <div
-        className="absolute w-full flex justify-between px-1"
+        className="absolute flex w-full justify-between px-1"
         style={{ transform: "translateX(1px)" }}
       >
         {[0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100].map((percent) => (
@@ -38,14 +37,14 @@ const Slider = React.forwardRef<
             className="flex flex-col items-center"
             style={{ width: "1px", marginLeft: percent === 0 ? "0" : `-1px` }}
           >
-            <div className="w-[1px] h-1 bg-muted-foreground" />
+            <div className="h-1 w-[1px] bg-muted-foreground" />
           </div>
         ))}
       </div>
 
       {/* Start and End labels */}
       {(startTitle || endTitle) && (
-        <div className="absolute w-full flex justify-between mt-1">
+        <div className="absolute mt-1 flex w-full justify-between">
           {startTitle && (
             <span className="text-sm text-muted-foreground">{startTitle}</span>
           )}
