@@ -2,7 +2,10 @@ import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 
-const myFont = localFont({ src: "/ArialPixel.ttf" });
+const arialPixel = localFont({
+  src: "/ArialPixel.ttf",
+  variable: "--font-arial-pixel",
+});
 
 export const metadata: Metadata = {
   title: "CS 1.6 Shadcn Theme",
@@ -16,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${myFont.className} antialiased`}>{children}</body>
+      <body className={`${arialPixel.className} antialiased`}>{children}</body>
     </html>
   );
 }

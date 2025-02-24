@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "format:write": "prettier --write \"**/*.{ts,tsx,mdx}\" --cache",
-    "lint": "next lint"
+    "lint": "next lint",
+    "registry:build": "shadcn build"
   },
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.3",
@@ -31,6 +32,7 @@
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "recharts": "^2.15.1",
+    "shadcn": "2.4.0-canary.10",
     "tailwind-merge": "^3.0.1",
     "tailwindcss-animate": "^1.0.7"
   },
