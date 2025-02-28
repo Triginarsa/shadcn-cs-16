@@ -1,6 +1,6 @@
-import { Input } from "@/components/ui/input";
-import { Button } from "./ui/button";
-import { Label } from "./ui/label";
+import { Button } from "@/registry/cs16/ui/button";
+import { Input } from "@/registry/cs16/ui/input";
+import { Label } from "@/registry/cs16/ui/label";
 
 export function InputDemo() {
   return (

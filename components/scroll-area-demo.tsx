@@ -1,5 +1,5 @@
-import { ScrollArea } from "@/components/ui/scroll-area";
-import { Separator } from "@/components/ui/separator";
+import { ScrollArea } from "@/registry/cs16/ui/scroll-area";
+import { Separator } from "@/registry/cs16/ui/separator";
 import * as React from "react";
 
 const tags = Array.from({ length: 50 }).map(

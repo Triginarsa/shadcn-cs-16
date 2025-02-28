@@ -17,10 +17,10 @@ import { SeparatorDemo } from "@/components/separator-demo";
 import { SliderDemo } from "@/components/slider-demo";
 import { TabsDemo } from "@/components/tabs-demo";
 import { TooltipDemo } from "@/components/tooltips-demo";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
 import { useCopyToClipboard } from "@/hooks/use-copy-to-clipboard";
+import { Badge } from "@/registry/cs16/ui/badge";
+import { Button } from "@/registry/cs16/ui/button";
+import { Card } from "@/registry/cs16/ui/card";
 import Link from "next/link";
 
 export default function Home() {
@@ -51,75 +51,272 @@ export default function Home() {
                 <Button
                   onClick={() => {
                     copyToClipboard(
-                      "https://shadcn-cs16.triginarsa.com/r/button.json",
+                      "https://shadcn-cs16.triginarsa.com/registry/button.json",
+                      "button",
                     );
                   }}
                   variant="default"
                   size={"sm"}
                 >
-                  {isCopied ? "Copied!" : "Copy Component"}
+                  {isCopied("button") ? "Copied!" : "Copy Component"}
                 </Button>
               </div>
               <ButtonDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Separator</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Separator</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/separator.json",
+                      "separator",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("separator") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <SeparatorDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Checkbox</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Checkbox</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/checkbox.json",
+                      "checkbox",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("checkbox") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <CheckboxDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Inputs</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Inputs</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/input.json",
+                      "input",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("input") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <InputDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">RadioGroup</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">RadioGroup</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/radio-group.json",
+                      "radio-group",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("radio-group") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <RadioGroupDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Sliders</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Sliders</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/slider.json",
+                      "slider",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("slider") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <SliderDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Dialog</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Dialog</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/dialog.json",
+                      "dialog",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("dialog") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <DialogDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Tooltip</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Tooltip</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/tooltip.json",
+                      "tooltip",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("tooltip") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <TooltipDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Progress</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Progress</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/progress.json",
+                      "progress",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("progress") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <ProgressDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Tabs</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Tabs</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/tabs.json",
+                      "tabs",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("tabs") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <TabsDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 flex items-center text-2xl">
-                Accordion
-                <Badge className="ml-2">Tailwind v4</Badge>
-              </h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 flex items-center text-2xl">
+                  Accordion
+                  <Badge className="ml-2">Tailwind v4</Badge>
+                </h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/accordion.json",
+                      "accordion",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("accordion") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <AccordionDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Alert Dialog</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Alert Dialog</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/alert-dialog.json",
+                      "alert-dialog",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("alert-dialog") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <AlertDialogDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Badge</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Badge</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/badge.json",
+                      "badge",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("badge") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <BadgeDemo />
             </Card>
             <Card className="flex flex-col gap-4 p-4">
-              <h2 className="mb-2 text-2xl">Scroll Area</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Scroll Area</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/scroll-area.json",
+                      "scroll-area",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("scroll-area") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <ScrollAreaDemo />
               <ScrollAreaHorizontalDemo />
             </Card>
             <Card className="p-4">
-              <h2 className="mb-2 text-2xl">Select</h2>
+              <div className="flex flex-row justify-between">
+                <h2 className="mb-2 text-2xl">Select</h2>
+                <Button
+                  onClick={() => {
+                    copyToClipboard(
+                      "https://shadcn-cs16.triginarsa.com/registry/select.json",
+                      "select",
+                    );
+                  }}
+                  variant="default"
+                  size={"sm"}
+                >
+                  {isCopied("select") ? "Copied!" : "Copy Component"}
+                </Button>
+              </div>
               <SelectDemo />
             </Card>
             <Card className="p-4 md:col-span-2 lg:col-span-3">

@@ -6,7 +6,7 @@ import {
   SelectLabel,
   SelectTrigger,
   SelectValue,
-} from "@/components/ui/select";
+} from "@/registry/cs16/ui/select";
 import * as React from "react";
 
 export function SelectDemo() {

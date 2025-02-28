@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@/components/ui/accordion";
+} from "@/registry/cs16/ui/accordion";
 
 export function AccordionDemo() {
   return (

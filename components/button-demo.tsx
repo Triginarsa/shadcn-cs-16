@@ -1,5 +1,5 @@
+import { Button } from "@/registry/cs16/ui/button";
 import React from "react";
-import { Button } from "./ui/button";
 
 type ButtonVariant =
   | "default"

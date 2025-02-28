@@ -1,0 +1,15 @@
+{
+  "name": "checkbox",
+  "type": "registry:ui",
+  "dependencies": [
+    "@radix-ui/react-checkbox"
+  ],
+  "files": [
+    {
+      "type": "registry:ui",
+      "content": "\"use client\";\n\nimport { cn } from \"@/lib/utils\";\nimport * as CheckboxPrimitive from \"@radix-ui/react-checkbox\";\nimport { cva, type VariantProps } from \"class-variance-authority\";\nimport * as React from \"react\";\n\nconst checkboxVariants = cva(\n  \"peer h-3 w-3 shrink-0 border focus-visible:outline-none focus-visible:outline-offset-1 focus-visible:outline-1 focus-visible:outline-dotted focus-visible:outline-black disabled:cursor-not-allowed disabled:opacity-50\",\n  {\n    variants: {\n      variant: {\n        default:\n          \"border-border-light rounded-xs data-[state=checked]:bg-primary data-[state=checked]:text-foreground data-[state=checked]:border-foreground\",\n        secondary:\n          \"border-t-[#292c21] border-l-[#292c21] border-r-[#8c9284] bg-muted border-b-[#8c9284] data-[state=checked]:text-accent-foreground\",\n      },\n    },\n    defaultVariants: {\n      variant: \"default\",\n    },\n  },\n);\n\ninterface CheckboxProps\n  extends React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>,\n    VariantProps<typeof checkboxVariants> {}\n\nconst Checkbox = React.forwardRef<\n  React.ElementRef<typeof CheckboxPrimitive.Root>,\n  CheckboxProps\n>(({ className, variant, ...props }, ref) => (\n  <CheckboxPrimitive.Root\n    ref={ref}\n    className={cn(checkboxVariants({ variant, className }))}\n    {...props}\n  >\n    <CheckboxPrimitive.Indicator\n      className={cn(\"flex items-center justify-center text-current\")}\n    >\n      <Check className=\"h-3 w-3\" />\n    </CheckboxPrimitive.Indicator>\n  </CheckboxPrimitive.Root>\n));\nCheckbox.displayName = CheckboxPrimitive.Root.displayName;\n\nexport { Checkbox };\n\ninterface CheckProps extends React.SVGProps<SVGSVGElement> {\n  className?: string;\n}\n\nconst Check: React.FC<CheckProps> = ({ className, ...props }) => (\n  <svg\n    xmlns=\"http://www.w3.org/2000/svg\"\n    viewBox=\"0 0 10 10\"\n    className={cn(\"h-3 w-3 fill-current\", className)}\n    {...props}\n  >\n    <path d=\"M2 6h1v1H2m1-2h1v1H3M2 5h1v1H2m0-2h1v1H2m1 1h1v1H3m0 0h1v1H3m1-2h1v1H4m0 0h1v1H4m0 0h1v1H4m1-2h1v1H5m0-2h1v1H5m0-2h1v1H5m1-2h1v1H6m0 0h1v1H6m0 0h1v1H6m1-2h1v1H7m0-2h1v1H7m0-2h1v1H7m1 0h1v1H8m0-2h1v1H8m0-2h1v1H8\"></path>\n  </svg>\n);\n",
+      "path": "ui/cs16/checkbox.tsx",
+      "target": "components/ui/cs16/checkbox.tsx"
+    }
+  ]
+}
