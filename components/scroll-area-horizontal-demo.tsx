@@ -1,4 +1,4 @@
-import { ScrollArea, ScrollBar } from "@/components/ui/scroll-area";
+import { ScrollArea, ScrollBar } from "@/registry/cs16/ui/scroll-area";
 import Image from "next/image";
 import * as React from "react";
 

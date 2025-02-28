@@ -9,9 +9,11 @@ export function useCopyToClipboard({
   timeout?: number;
   onCopy?: () => void;
 } = {}) {
-  const [isCopied, setIsCopied] = React.useState(false);
+  const [copiedComponent, setCopiedComponent] = React.useState<string | null>(
+    null,
+  );
 
-  const copyToClipboard = (value: string) => {
+  const copyToClipboard = (value: string, componentId: string) => {
     if (typeof window === "undefined" || !navigator.clipboard.writeText) {
       return;
     }
@@ -19,17 +21,19 @@ export function useCopyToClipboard({
     if (!value) return;
 
     navigator.clipboard.writeText(value).then(() => {
-      setIsCopied(true);
+      setCopiedComponent(componentId);
 
       if (onCopy) {
         onCopy();
       }
 
       setTimeout(() => {
-        setIsCopied(false);
+        setCopiedComponent(null);
       }, timeout);
     }, console.error);
   };
+
+  const isCopied = (componentId: string) => copiedComponent === componentId;
 
   return { isCopied, copyToClipboard };
 }

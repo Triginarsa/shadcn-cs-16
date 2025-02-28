@@ -1,6 +1,6 @@
 "use client";
 
-import { Progress } from "@/components/ui/progress";
+import { Progress } from "@/registry/cs16/ui/progress";
 import * as React from "react";
 
 export function ProgressDemo() {

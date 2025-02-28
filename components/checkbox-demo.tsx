@@ -1,7 +1,7 @@
 "use client";
 
-import { Checkbox } from "@/components/ui/checkbox";
-import { Label } from "./ui/label";
+import { Checkbox } from "@/registry/cs16/ui/checkbox";
+import { Label } from "@/registry/cs16/ui/label";
 
 export function CheckboxDemo() {
   return (

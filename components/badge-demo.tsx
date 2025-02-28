@@ -1,4 +1,4 @@
-import { Badge } from "@/components/ui/badge";
+import { Badge } from "@/registry/cs16/ui/badge";
 
 export function BadgeDemo() {
   return (

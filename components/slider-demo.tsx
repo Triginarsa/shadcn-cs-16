@@ -1,6 +1,6 @@
-import { Slider } from "@/components/ui/slider";
 import { cn } from "@/lib/utils";
-import { Input } from "./ui/input";
+import { Input } from "@/registry/cs16/ui/input";
+import { Slider } from "@/registry/cs16/ui/slider";
 
 type SliderProps = React.ComponentProps<typeof Slider>;
 
